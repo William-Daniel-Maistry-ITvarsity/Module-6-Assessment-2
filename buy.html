@@ -51,31 +51,41 @@
 
                 <h1 class="center">Let's complete your Purchase!</h1>
                 <h2>Please complete the following form:</h2>
-                <form action="thanks.html">
+                <form action="https://formsubmit.co/Savedbygrace.wdm@gmail.com"
+                    method="POST">
                     <label for="firstname">First Name: </label>
-                    <input type="text" id="firstname" placeholder="John"
+                    <input type="text" id="firstname" name="first-name"
+                        placeholder="John"
                         required
                         aria-required="true" pattern="[A-Za-z\- ]*">
                     <label for="surname">Surname: </label>
-                    <input type="text" id="surname" placeholder="Doe" required
+                    <input type="text" id="surname" name="surname"
+                        placeholder="Doe" required
                         aria-required="true" pattern="[A-Za-z\- ]*">
                     <label for="email">Email: </label>
-                    <input type="email" id="email"
+                    <input type="email" id="email" name="email"
                         placeholder="email@address.com"
                         required aria-required="true">
                     <label for="phone">Phone: </label>
-                    <input type="tel" id="phone" placeholder="0123456789"
+                    <input type="tel" id="phone" name="phone"
+                        placeholder="0123456789"
                         required
                         aria-required="true" inputmode="numeric"
                         pattern="[0-9\-\+ ]*" minlength="9" maxlength="15">
                     <h3>Preferred method of contact:</h3>
                     <input type="checkbox" id="email-option"
-                        name="contact-method">
+                        name="email-preference">
                     <label for="email-option">Email</label>
                     <br>
                     <input type="checkbox" id="phone-option"
-                        name="contact-method">
+                        name="phone-preference">
                     <label for="phone-option">Phone</label>
+
+                    <!-- Hidden fields -->
+                    <input type="hidden" name="_next"
+                        value=https://william-daniel-maistry-itvarsity.github.io/Module-6-Assessment-2/thanks.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_honey">
 
                     <button type="submit">Buy now</button>
                 </form>
